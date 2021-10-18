@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void opcionSeleccionada(View view) {
+        opcion1.setChecked(false);
+        opcion2.setChecked(false);
         Preguntas preguntas = lstPreguntas.get(a);
         opcion1 = findViewById(R.id.radioButton);
         opcion2 = findViewById(R.id.radioButton2);
@@ -104,8 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                opcion1.setChecked(false);
-                opcion2.setChecked(false);
+
                 break;
 
             case R.id.radioButton2:
@@ -148,8 +149,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(irCosa);
 
                 }
-                opcion1.setChecked(false);
-                opcion2.setChecked(false);
                 break;
 
             default:
